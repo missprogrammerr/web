@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="" width="device-width, initial-scale=1.0">
+        <title>Form</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <form method="POST" action="" name="reg_form">
+            <fieldset>
+                <legend>Service Information</legend>
+                <div class="field-group">
+                    <label for="faculty">Faculty</label>
+                    <select name="faculty" id="faculty">
+                        <option>Choose faculty</option>
+                            <optgroup label="IT">
+                                <option value="bca">BCA</option>
+                                <option value="bit">BIT</option>
+                                <option value="bsccsit">BSc.CSIT</option>
+                                <option value="bim">BIM</option>
+                            </optgroup>
+                            <optgroup label="Others">
+                                <option value="bhm">BHM</option>
+                                <option value="bed">BEd</option>
+                            </optgroup>
+                    </select>
+                </div>
+                <div class="field-group">
+                    <h4>Choose services you want.</h4>
+                    <div class="field-subgroup">
+                        <div class="field-inline">
+                            <input type="checkbox" id="note" name="service" value="Slide Notes">
+                            <label for="note">Slide Notes</label>
+                        </div>
+                        <div class="field-inline">
+                            <input type="checkbox" id="ref" name="service" value="Lecture References">
+                            <label for="ref">Lecture Refernces</label>
+                        </div>
+                        <div class="field-inline">
+                            <input type="checkbox" id="elib" name="service" value="E-Library">
+                            <label for="elib">E-Library</label>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Personal Information</legend>
+                <div class="field-group">
+                    <label for="fname">Full Name</label>
+                    <input type="text" id="fname" name="fullname" value="" placeholder="i.e your name">
+                </div>
+                <div class="field-group">
+                    <label for="email">Full Name</label>
+                    <input type="text" id="email" name="email" value="">
+                </div>
+                <div class="field-group">
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="email" value="">
+                </div>
+                <div class="field-group">
+                    <label for="phone">Phone</label>
+                    <input type="text" id="phone" name="phone" value="">
+                </div>
+                <div class="field-group">
+                    <h4>Gender</h4>
+                    <div class="field-subgroup">
+                        <div class="field-inline">
+                            <input type="radio" id="male" name="gender" value="Male">
+                            <label for="male">Male</label>
+                        </div>
+                        <div class="field-inline">
+                            <input type="radio" id="female" name="gender" value="Female">
+                            <label for="female">Female</label>
+                        </div>
+                        <div class="field-inline">
+                            <input type="radio" id="others" name="gender" value="Others">
+                            <label for="others">Others</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="field-subgroup">
+                    <label for="photo">Photo</label>
+                    <input type="file" id="photo" name="photo">
+                </div>
+                <fieldset>
+                    <legend>Create Account?</legend>
+                    <div class="field-group">
+                        <input type="checkbox" name="create_account" value="1" id="account">
+                        <label for="account">Do you want to create new account?</label>
+                    </div>
+                    <div class="field-group">
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password">
+                    </div>
+                    <div class="field-group">
+                        <label for="confirm-password">Confirm Password:</label>
+                        <input type="password" id="confirm-password" name="confirm-password">
+                    </div>
+                </fieldset>
+                <div class="field-group">
+                    <input type="checkbox" id="agree" name="agreement" value="1">
+                    <label for="agree">I agree to register new data on this website.</label>
+                </div>
+                <div class="field-group">
+                    <label for="msg">Write your message</label>
+                    <textarea id="msg" name="message" rows="10" cols="30" placeholder="Write your message here..."></textarea>
+                </div>
+                <div class="button-group">
+                    <button type="submit" name="submit">Register Data</button>
+                    <button type="reset" name="reset">Reset Form Data</button>
+                </div>
+            </fieldset>
+        </form>
+    </body>
+</html>
