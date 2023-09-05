@@ -61,6 +61,10 @@ form legend{
     transition: 0.3s;
 }
 
+.error{
+    color: red;
+}
+
 button{
     border: none;
     padding: 12px 30px;
